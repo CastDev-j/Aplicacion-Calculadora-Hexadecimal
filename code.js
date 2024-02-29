@@ -32,7 +32,7 @@ BOTON.addEventListener('click', function () {
     }
 
     if (esCampoUnoValido && esCampoDosValido) {
-        broma.innerHTML = "Multiplicación  Hexadecimal"
+        broma.innerHTML = "Multiplicación Hexadecimal de Enteros"
         const valorDecimalUno = parseInt(CAMPOUNO.value, 16);
         const valorDecimalDos = parseInt(CAMPODOS.value, 16);
         const resultadoFinal = valorDecimalUno*valorDecimalDos;

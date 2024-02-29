@@ -90,6 +90,7 @@ BOTON.addEventListener('click', function () {
         if (operador == "/") {
             console.log(valorDecimalUno + " / " + valorDecimalDos + " = " + resultadoFinal)
             console.log(CAMPOUNO.value + " / " + CAMPODOS.value + " = " + resultadoHexadecimal)
+            broma.innerHTML = "A lo Mejor No Cuadra jejeje"
         }
         CAMPORESULTADO.innerHTML = resultadoHexadecimal
     } else {

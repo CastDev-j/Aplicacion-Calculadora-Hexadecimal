@@ -33,9 +33,9 @@ BOTON.addEventListener('click', function () {
 
     if (esCampoUnoValido && esCampoDosValido) {
         broma.innerHTML = "Multiplicación Hexadecimal de Enteros"
-        const valorDecimalUno = parseInt(CAMPOUNO.value, 16);
-        const valorDecimalDos = parseInt(CAMPODOS.value, 16);
-        const resultadoFinal = valorDecimalUno*valorDecimalDos;
+        const valorDecimalUno = BigInt("0x" + CAMPOUNO.value);
+        const valorDecimalDos = BigInt("0x" + CAMPODOS.value);
+        const resultadoFinal = valorDecimalUno * valorDecimalDos;
         const resultadoHexadecimal = resultadoFinal.toString(16);
         console.log(resultadoFinal)
         CAMPORESULTADO.innerHTML = resultadoHexadecimal

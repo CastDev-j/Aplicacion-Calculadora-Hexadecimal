@@ -146,3 +146,41 @@ label {
 .clase-vacia {
     color: var(--error);
 }
+
+
+.simbolo{
+    display: inline;
+    float: left;
+    width: fit-content;
+    font-size: 15px;
+    min-width: 30px;
+    color: var(--blue-900);
+    font-weight: bold;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.simbolo::after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 3px;
+    background-color: var(--blue-500);
+    border-radius: 10px;
+    transition: width .2s linear;
+}
+
+.seleccionado::after{
+    width: 100%;
+}
+
+option{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+

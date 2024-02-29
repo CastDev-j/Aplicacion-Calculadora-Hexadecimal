@@ -19,26 +19,15 @@ BOTON.addEventListener('click', function () {
     let bromaUno = CAMPOUNO.value.includes(".")
     let bromaDos = CAMPODOS.value.includes(".")
 
-    if(bromaUno||bromaDos){
+        if(bromaUno||bromaDos){
         broma.innerHTML = "Le Tengo Miedo a Operar Con Racionales"
     }
 
-
     if (!esCampoUnoValido) {
         TITULOUNO.classList.add("clase-vacia");
     }
 
     if (!esCampoDosValido) {
-        TITULODOS.classList.add("clase-vacia");
-    }
-
-    if (!esCampoUnoValido) {
-        CAMPOUNO.classList.add("error");
-        TITULOUNO.classList.add("clase-vacia");
-    }
-
-    if (!esCampoDosValido) {
-        CAMPODOS.classList.add("error");
         TITULODOS.classList.add("clase-vacia");
     }
 

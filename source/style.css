@@ -53,7 +53,8 @@ body {
     height: 450px;
     padding: 25px;
     background-color: var(--blue-50);
-    margin: 50px auto;
+    margin: auto;
+    margin-top:50px;
     border-radius: 10px;
 }
 

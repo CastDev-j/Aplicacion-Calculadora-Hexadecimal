@@ -15,7 +15,7 @@ BOTON.addEventListener('click', function () {
   
     const esCampoUnoValido = CAMPOUNO.value && regexValidacion.test(CAMPOUNO.value);
     const esCampoDosValido = CAMPODOS.value && regexValidacion.test(CAMPODOS.value);
-
+    CAMPORESULTADO.innerHTML = "..."
     let bromaUno = CAMPOUNO.value.includes(".")
     let bromaDos = CAMPODOS.value.includes(".")
 

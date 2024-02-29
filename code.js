@@ -7,6 +7,7 @@ const CAMPORESULTADO = document.querySelector(".campo-resultado")
 const broma = document.querySelector(".broma")
 const regexValidacion = /^[0-9A-F]+$/i;
 let operador = "+";
+let consola = document.querySelector("#consola")
 
 document.addEventListener('DOMContentLoaded', function () {
     const simbolos = document.querySelectorAll('.simbolo');
@@ -76,20 +77,24 @@ BOTON.addEventListener('click', function () {
         }
         const resultadoHexadecimal = resultadoFinal.toString(16);
         if (operador == "+") {
-            console.log(valorDecimalUno + " + " + valorDecimalDos + " = " + resultadoFinal)
-            console.log(CAMPOUNO.value + " + " + CAMPODOS.value + " = " + resultadoHexadecimal)
+            let decval = valorDecimalUno + " + " + valorDecimalDos + " = " + resultadoFinal
+            let hexval = CAMPOUNO.value + " + " + CAMPODOS.value + " = " + resultadoHexadecimal
+            consola.innerHTML = decval + " " + hexval
         }
         if (operador == "-") {
-            console.log(valorDecimalUno + " - " + valorDecimalDos + " = " + resultadoFinal)
-            console.log(CAMPOUNO.value + " - " + CAMPODOS.value + " = " + resultadoHexadecimal)
+      let decval = valorDecimalUno + " - " + valorDecimalDos + " = " + resultadoFinal
+            let hexval = CAMPOUNO.value + " - " + CAMPODOS.value + " = " + resultadoHexadecimal
+            consola.innerHTML = decval + " " + hexval
         }
         if (operador == "*") {
-            console.log(valorDecimalUno + " * " + valorDecimalDos + " = " + resultadoFinal)
-            console.log(CAMPOUNO.value + " * " + CAMPODOS.value + " = " + resultadoHexadecimal)
+            let decval = valorDecimalUno + " * " + valorDecimalDos + " = " + resultadoFinal
+            let hexval = CAMPOUNO.value + " * " + CAMPODOS.value + " = " + resultadoHexadecimal
+            consola.innerHTML = decval + " " + hexval
         }
         if (operador == "/") {
-            console.log(valorDecimalUno + " / " + valorDecimalDos + " = " + resultadoFinal)
-            console.log(CAMPOUNO.value + " / " + CAMPODOS.value + " = " + resultadoHexadecimal)
+            let decval = valorDecimalUno + " / " + valorDecimalDos + " = " + resultadoFinal
+            let hexval = CAMPOUNO.value + " / " + CAMPODOS.value + " = " + resultadoHexadecimal
+            consola.innerHTML = decval + " " + hexval
             broma.innerHTML = "A lo Mejor No Cuadra jejeje"
         }
         CAMPORESULTADO.innerHTML = resultadoHexadecimal

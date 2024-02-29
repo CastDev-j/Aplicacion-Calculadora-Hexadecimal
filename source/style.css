@@ -1,0 +1,143 @@
+:root {
+    --blue-50: #ecf3ff;
+    --blue-100: #dce9ff;
+    --blue-300: #99b7ff;
+    --blue-500: #5066ff;
+    --blue-950: #151851;
+    --error: #fa2e2e;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../source/fonts/Comfortaa/static/Comfortaa-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../source/fonts/Comfortaa/static/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('../source/fonts/Comfortaa/static/Comfortaa-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FlowCircular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../source/fonts/Flow_Circular/FlowCircular-Regular.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa';
+}
+
+body {
+    background-color: var(--blue-100);
+}
+
+.card {
+    display: block;
+    width: 450px;
+    height: 450px;
+    padding: 25px;
+    background-color: var(--blue-50);
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    display: block;
+    float: right;
+    width: fit-content;
+    font-size: 15px;
+    color: var(--blue-50);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--blue-500);
+}
+
+label {
+    clear: both;
+    display: block;
+    color: var(--blue-950);
+    font-weight: bold;
+    font-size: 19px;
+    text-align: start;
+    transition: color .3s linear;
+}
+
+.entradas {
+    display: block;
+    margin: 10px 0px 30px 0px;
+    width: 430px;
+    border: none;
+    outline: none;
+    background-color: var(--blue-100);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color linear .3s, color linear .3s;
+    color: var(--blue-900);
+}
+
+.entradas::placeholder {
+    color: var(--blue-300);
+    transition: color linear .3s;
+    font-family: "FlowCircular";
+}
+
+.entradas:focus {
+    color: var(--blue-950);
+}
+
+.boton {
+    display: block;
+    width: 450px;
+    outline: none;
+    border: 2px solid var(--blue-500);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--blue-500);
+    color: var(--blue-50);
+    transition: background-color linear .2s, color linear .2s;
+}
+
+.boton:hover {
+    background-color: var(--blue-50);
+    color: var(--blue-500);
+    cursor: pointer;
+}
+
+.campo-resultado {
+    display: block;
+    margin-top: 30px;
+    min-height: 70px;
+    height: auto;
+    width: 430px;
+    padding: 10px;
+    background-color: var(--blue-100);
+    color: var(--blue-950);
+    font-weight: bold;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.clase-vacia {
+    color: var(--error);
+}

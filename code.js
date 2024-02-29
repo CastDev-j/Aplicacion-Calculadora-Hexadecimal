@@ -43,7 +43,7 @@ BOTON.addEventListener('click', function () {
     }
 
     if (esCampoUnoValido && esCampoDosValido) {
-        broma.innerHTML = "Multiplicación"
+        broma.innerHTML = "Multiplicación  Hexadecimal"
         const valorDecimalUno = parseInt(CAMPOUNO.value, 16);
         const valorDecimalDos = parseInt(CAMPODOS.value, 16);
         const resultadoFinal = valorDecimalUno*valorDecimalDos;

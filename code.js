@@ -37,7 +37,8 @@ BOTON.addEventListener('click', function () {
         const valorDecimalDos = BigInt("0x" + CAMPODOS.value);
         const resultadoFinal = valorDecimalUno * valorDecimalDos;
         const resultadoHexadecimal = resultadoFinal.toString(16);
-        console.log(resultadoFinal)
+        console.log(valorDecimalUno + " * " + valorDecimalDos + " = " + resultadoFinal)
+        console.log(CAMPOUNO.value + " * " + CAMPODOS.value + " = " + resultadoHexadecimal)
         CAMPORESULTADO.innerHTML = resultadoHexadecimal
     } else {
         console.log("Uno o ambos campos son inválidos.");
